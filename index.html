@@ -12,58 +12,60 @@
     <body>
         <div class="d-flex" id="wrapper">
             <div class="border-end bg-pink" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Accusoft</div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Customers</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Projects</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Orders</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Inventory</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Accounts</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 my-3 ml-3 radius-left" href="#!">Tasks</a>
+                <div class="sidebar-heading"><a href="#!"><h1 class="d-none invisible">Accusoft</h1><img id="logo" class="w-100 img-fluid" src="assets/logo.png" alt="Logo Accusoft"></a></div>
+                <div class="list-group list-group-flush mt-4">
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left active fw-semibold" href="#!"><ion-icon class="me-2" name="speedometer-outline"></ion-icon>Dashboard</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="people-outline"></ion-icon>Customers</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="file-tray-full-outline"></ion-icon>Projects</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="clipboard-outline"></ion-icon>Orders</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="briefcase-outline"></ion-icon>Inventory</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="person-circle-outline"></ion-icon>Accounts</a>
+                    <a class="list-group-item list-group-item-action p-3 my-2 ms-3 radius-left fw-semibold" href="#!"><ion-icon class="me-2" name="reader-outline"></ion-icon>Tasks</a>
                 </div>
             </div>
             <div id="page-content-wrapper ">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm bg-white">
-                    <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
-                        <h2>Dashboard</h2>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                        </form>
-                        <div class="d-flex">
-                            <div>Imagem</div>
-                            <div class="d-flex flex-column">
-                                <h3>John Doe</h3>
-                                <span>Super admin</span>
+                    <div class="d-flex w-100">
+                        <button class="btn" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+                        <div class="d-flex justify-content-between w-100">
+                            <h2>Dashboard</h2>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                            </form>
+                            <div class="d-flex">
+                                <div>Imagem</div>
+                                <div class="d-flex flex-column">
+                                    <h3>John Doe</h3>
+                                    <span>Super admin</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </nav>
                 <div class="container-fluid bg-grey">
                     <div id="sessao-filtros" class="d-flex justify-content-between pt-3 mb-3">
-                        <div id="filtro-periodo" class="d-flex">
+                        <div id="filtro-periodo" class="d-flex justify-content-envenly">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input d-none" type="radio" name="filtroAno" id="filtroAno" checked>
+                                <label class="form-check-label btn btn-secondary active shadow-sm rounded" for="filtroAno">
+                                  Ano
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input d-none" type="radio" name="filtroMes" id="filtroMes">
+                                <label class="form-check-label btn btn-secondary shadow-sm rounded" for="filtroMes">
                                   Mês
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                                <input class="form-check-input d-none" type="radio" name="filtroTrimestre" id="filtroTrimestre">
+                                <label class="form-check-label btn btn-secondary shadow-sm rounded" for="filtroTrimestre">
                                   Trimestre
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                  Ano
-                                </label>
-                            </div>
                         </div>
-                        <div>Periodo: Dezembro</div>
+                        <div>Periodo: 2023</div>
                     </div>
                     <div id="sessao-status" class="row mt-3 mb-5">
                         <div class="col-6 col-md-3">
@@ -97,17 +99,26 @@
                     </div>
                     <div id="sessao-graficos" class="row my-5">
                         <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <h2 class="text-dark">Receita mês a mês</h2>
+                            </div>
                             <div class="shadow-sm bg-white rounded p-3">
                                 <canvas id="chartReceita"></canvas>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <h2 class="text-dark">Inadimplência mês a mês</h2>
+                            </div>
                             <div class="shadow-sm bg-white rounded p-3">
                                 <canvas id="chartInadimplencia"></canvas>
                             </div>
                         </div>
                     </div>
                     <div id="sessao-notas" class="my-5">
+                        <div class="mb-3">
+                            <h2 class="text-dark">Notas Emitidas</h2>
+                        </div>
                         <div class="shadow-sm bg-white rounded p-3">
                             <table class="table">
                                 <thead>
@@ -118,9 +129,9 @@
                                     <th scope="col">Data Cobrança</th>
                                     <th scope="col">Data Pagamento</th>
                                     <th scope="col">Valor</th>
-                                    <th scope="col">Documento da nota</th>
-                                    <th scope="col">Documento do boleto</th>
                                     <th scope="col">Status</th>
+                                    <th scope="col">Nota</th>
+                                    <th scope="col">Boleto</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -190,6 +201,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js" integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="path/to/chartjs/dist/Chart.js"></script>
+        <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+        <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
