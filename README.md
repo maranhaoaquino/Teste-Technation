@@ -1,4 +1,4 @@
-"# Teste TechNation
+# Teste TechNation
 
 Projeto criado para avaliação de candidatura em vaga. Utilizado como avaliação de habilidades no front-end usando HTML, CSS, Javascript e Bootstrap.
 
@@ -16,4 +16,4 @@ https://www.linkedin.com/in/lucas-maranhao/
 * Jquey - versão: 3.7.1;
 * Bootstrap - versão: 5.2.3;
 * Chart.js - versão: 2.8.0;
-* Ionicons - versão: 7.1.0;" 
+* Ionicons - versão: 7.1.0;
