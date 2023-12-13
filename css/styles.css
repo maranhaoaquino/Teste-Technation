@@ -18,7 +18,7 @@
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
   --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
+  --bs-gray-500: #8D8D8D;
   --bs-gray-600: #6c757d;
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
@@ -10860,6 +10860,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .bg-grey{
   background-color: var(--bs-gray);
+}
+
+.color-grey-500{
+  color: var(--bs-gray-500);
 }
 
 .radius-left{
