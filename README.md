@@ -3,10 +3,10 @@
 Projeto criado para avaliação de candidatura em vaga. Utilizado como avaliação de habilidades no front-end usando HTML, CSS, Javascript e Bootstrap.
 
 # Desenvolvedor
-Lucas Maranhao de Aquino
-https://github.com/maranhaoaquino
-https://luketa.me/
-https://www.linkedin.com/in/lucas-maranhao/
+* Lucas Maranhao de Aquino
+* https://github.com/maranhaoaquino
+* https://luketa.me/
+* https://www.linkedin.com/in/lucas-maranhao/
 
 # Setup
 * Necessário acesso a internet (devido ao uso de CDN);
